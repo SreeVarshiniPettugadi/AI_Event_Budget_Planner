@@ -1,0 +1,60 @@
+<!-- planner.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Planner | AI Event Budget Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI Event Budget Planner</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="planner.html">Planner</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Budget Planner</h2>
+    <form id="budgetForm">
+      <label>Event Type:
+        <select id="eventType" required>
+          <option value="">Select...</option>
+          <option value="wedding">Wedding</option>
+          <option value="birthday">Birthday</option>
+          <option value="corporate">Corporate</option>
+        </select>
+      </label><br><br>
+
+      <label>Guests:
+        <input type="number" id="guests" min="1" required />
+      </label><br><br>
+
+      <label>Location:
+        <select id="location" required>
+          <option value="">Select...</option>
+          <option value="metro">Metro</option>
+          <option value="semi-urban">Semi-Urban</option>
+          <option value="rural">Rural</option>
+        </select>
+      </label><br><br>
+
+      <label>
+        Add-ons:<br>
+        <input type="checkbox" value="entertainment" /> Entertainment<br>
+        <input type="checkbox" value="decor" /> Decor<br>
+        <input type="checkbox" value="photography" /> Photography
+      </label><br><br>
+
+      <button type="submit">Estimate Budget</button>
+    </form>
+
+    <div id="result" style="margin-top:2rem;"></div>
+  </main>
+  <footer>&copy; 2025 AI Event Budget Planner</footer>
+  <script src="script.js"></script>
+</body>
+</html>
